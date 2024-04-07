@@ -125,6 +125,7 @@ a {
   --font-sz-14: 15px;
   --font-sz-16: 16px;
   --font-sz-17: 17px;
+  --font-sz-18: 18px;
   --font-sz-20: 20px;
   --font-sz-22: 22px;
   --font-sz-24: 24px;
@@ -422,6 +423,7 @@ body {
 /* ============================== CATALOG-SLIDER ============================== */
 .catalog__inner {
   padding-top: 30px;
+  padding-bottom: 100px;
 }
 .catalog__title {
   font-size: var(--font-sz-24);
@@ -493,4 +495,37 @@ body {
   background-color: var(--color-bg-grey);
   color: var(--color-bg-dark-blue);
   border-color: var(--color-bg-grey);
+}
+
+/* ============================== SOCIALS ============================== */
+.socials__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.socials__item-wrapper {
+  position: relative;
+}
+.socials__item-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.socials__item-title {
+  color: var(--color-tx-white);
+  font-size: var(--font-sz-18);
+  font-weight: var(--font-w-bold);
+  line-height: 26px;
+}
+.socials__item-btn {
+  position: relative;
+  background-color: var(--color-bg-white);
+  margin-top: 12px;
+  font-size: var(--font-sz-13);
+  font-weight: var(--font-w-semibold);
+  color: var(--color-tx-black);
+}
+.socials__item-btn p {
+  padding: 5px 10px;
 }
