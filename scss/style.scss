@@ -428,17 +428,39 @@ body {
 .socials {
     &__inner {
         display: flex;
+        padding-bottom: 150px;
     }
     &__item {
+        &:hover {
+            & .socials__item-img img {
+                transform: scale(1.2, 1.2);
+                transition: .6s ease;
+            }
+            & .socials__item-btn {
+                background-color: transparent;
+                border: 1.5px solid var(--color-bg-white);
+                color: var(--color-tx-white);
+                transition: .6s ease;
+            }
+        }
         &-wrapper {
             position: relative;
         }
         &-img {
+            width: 440px;
+            height: 195 px;
+            overflow: hidden; 
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                transition: .6s ease;
+            }
         }
         &-text {
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 30%;
+            left: 20px;
             z-index: 5;
         }
         &-title {
@@ -449,14 +471,56 @@ body {
         }
         &-btn {
             position: relative;
+            display: inline-block;
             background-color: var(--color-bg-white);
             margin-top: 12px;
             font-size: var(--font-sz-13);
             font-weight: var(--font-w-semibold);
             color: var(--color-tx-black);
+            transition: .6s ease;
             & p {
-                padding: 5px 10px;
+                display: flex;
+                align-items: center;
+                padding: 10px 20px 10px 10px;
+                & img {
+                    margin-left: 5px;
+                    margin-top: -1px;
+                    color: #0d34a4;
+                    font-size: var(--font-sz-24);
+                }
             }
         }
     }
+}
+
+/* ============================== SOCIALS ============================== */
+
+.about {
+    border-top: 2px solid var(--color-bg-grey);
+    border-bottom: 2px solid var(--color-bg-grey);
+
+    &__inner {
+        padding: 20px 0;
+        display: flex;
+        gap: 50px;
+
+        &-content {
+            & h2 {
+                font-size: var(--font-sz-24);
+                font-weight: var(--font-w-semibold);
+            }
+            & p {
+                font-size: var(--font-sz-14);
+                line-height: 24px;
+                &:last-child {
+                    margin-top: 25px;
+                }
+            }
+        }
+
+        &-img {
+        }
+    }
+}
+.container {
 }
