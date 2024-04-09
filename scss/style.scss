@@ -9,6 +9,7 @@
     --color-tx-black: #000000;
     --color-tx-blue: #0d34a4;
     --color-tx-white: #FFFFFF;
+    --color-tx-dark-grey: rgba(112,112,112,1);
 
     // background colors
     --color-bg-white: #fff;
@@ -16,10 +17,11 @@
     --color-bg-grey: rgba(229, 229, 229, 1);
 
     // font-size (n, n2)
+    --font-sz-11: 11px;
     --font-sz-12: 12px;
-    --font-sz-12: 13px;
-    --font-sz-13: 14px;
-    --font-sz-14: 15px;
+    --font-sz-13: 13px;
+    --font-sz-14: 14px;
+    --font-sz-15: 15px;
     --font-sz-16: 16px;
     --font-sz-17: 17px;
     --font-sz-18: 18px;
@@ -508,6 +510,7 @@ body {
             & h2 {
                 font-size: var(--font-sz-24);
                 font-weight: var(--font-w-semibold);
+                margin-bottom: 20px;
             }
             & p {
                 font-size: var(--font-sz-14);
@@ -517,10 +520,164 @@ body {
                 }
             }
         }
-
         &-img {
         }
     }
 }
+
+/* ============================== NEWS ============================== */
+
+.news {
+
+    &__inner {
+        padding: 50px 0;
+    }
+
+    &__title {
+        font-size: var(--font-sz-24);
+        font-weight: var(--font-w-semibold);
+        padding-bottom: 25px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        &-item {
+            width: 310px;
+        }
+    }
+
+    &__item {
+        &-img {
+            width: 310px;
+            height: 175px;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &-about {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            & p {
+                display: flex;
+                align-items: center;
+                font-size: var(--font-sz-12);
+                color: var(--color-tx-dark-grey);
+                & iconify-icon {
+                    margin-right: 5px;
+                }
+            }
+            & a {
+                font-size: var(--font-sz-12);
+                color: var(--color-bg-dark-blue);
+                font-weight: var(--font-w-medium);
+                transition: ease .6s;
+                &:hover {
+                    color: var(--color-tx-blue);
+                    transition: ease .6s;
+                }
+            }
+        }
+
+        &-title {
+            font-size: var(--font-sz-18);
+            font-weight: var(--font-w-semibold);
+            transition: ease .6s;
+            &:hover {
+                color: var(--color-tx-blue);
+                transition: ease .6s;
+            }
+        }
+
+        &-text {
+            font-size: var(--font-sz-14);
+            color: var(--color-tx-dark-grey);
+            line-height: 18px;
+            padding: 15px 0;
+        }
+
+        &-btn {
+            font-size: var(--font-sz-13);
+            font-weight: var(--font-w-semibold);
+            transition: ease .6s;
+            &:hover {
+                color: var(--color-tx-blue);
+                transition: ease .6s;
+            }
+            & a {
+                display: flex;
+                align-items: center;
+            }
+            & a iconify-icon {
+                font-size: var(--font-sz-18);
+                margin-left: 5px;
+            }
+        }
+    }
+
+    &__about {
+
+        &-calendar {
+        }
+
+        &-comment {
+        }
+
+        &-heading {
+            font-weight: var(--font-w-medium);
+        }
+    }
+}
+
+
+/* ============================== FOOTER ============================== */
+
+.footer {
+
+    &__inner {
+    }
+
+    &__content {
+    }
+
+    &__item {
+
+        &-title {
+        }
+
+        &-text {
+        }
+
+        &-socials {
+        }
+
+        &-pay {
+        }
+    }
+
+    &__socials {
+
+        &-item {
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+            overflow: hidden;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    &__privacy {
+    }
+}
 .container {
 }
+
