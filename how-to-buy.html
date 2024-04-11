@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
+        integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css"
+        integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/slick.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <title>NewLand</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="header__inner">
+                <div class="header__top">
+                    <div class="container">
+                        <div class="header__top-logo">
+                            <img src="/assets/img/logo.webp" alt="logo">
+                        </div>
+                        <div class="header__searh"></div>
+                        <div class="header__icons">
+                            <div class="header__icons-log"></div>
+                            <div class="header__icons-wishlist"></div>
+                            <div class="header__icons-cart"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bot">
+                    <div class="container">
+                        <nav class="header__bot-catalog">
+                            <ul class="header__catalog-menu">
+                                <li class="header__catalog-item">
+                                    <a class="header__catalog-title" href="#">КАТАЛОГ</a>
+                                    <ul class="header__catalog-submenu header__catalog-submenu--lvl1">
+                                        <li class="header__catalog-item">
+                                            <a href="#">РАСПРОДАЖА -20%</a>
+                                        </li>
+                                        <li class="header__catalog-item">
+                                            <a href="#">ФУРНИТУРА</a>
+                                            <ul class="header__catalog-submenu">
+                                                <li class="header__catalog-item">
+                                                    <a href="#">БЕЙЛЫ</a>
+                                                    <ul class="header__catalog-submenu">
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Для влейки</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Зажимные</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Съемные</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Подвесные</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">ЗАМКИ</a>
+                                                    <ul class="header__catalog-submenu">
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Закручивающиеся</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Карабины</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Переходники</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Складные</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Тоглы</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">КАФФЫ</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">КОЛЬЦА</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">КОННЕКТОРЫ</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">ОСНОВЫ</a>
+                                                    <ul class="header__catalog-submenu">
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Для браслетов</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Для брошей</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Для колец</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Для колье</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">ПОДВЕСКИ</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">ПРОВОЛОКА</a>
+                                                    <ul class="header__catalog-submenu">
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Мемори</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Ювелирная</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">РАЗДЕЛИТЕЛИ</a>
+                                                    <ul class="header__catalog-submenu">
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Разделители бусин</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Шарики</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">РАМКИ</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">РАСХОДНИКИ</a>
+                                                    <ul class="header__catalog-submenu">
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Каллоты</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Кримпы зажимные</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Колечки соединительные</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Обжимные бусины</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Пины</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Протекторы</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">РЕЗИНКА</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">ТРУБОЧКИ</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">ТРОСИК</a>
+                                                    <ul class="header__catalog-submenu">
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Ювелирный</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Флекси FLEXY</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">ЦЕПИ</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">ШАПОЧКИ ДЛЯ БУСИН</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">ШВЕНЗЫ</a>
+                                                    <ul class="header__catalog-submenu">
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Заглушки</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Конго (бублики)</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Английский замок</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Гвоздники (пусеты)</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Круглые</a>
+                                                        </li>
+                                                        <li class="header__catalog-item">
+                                                            <a href="#">Крючки</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">ШНУРЫ КАУЧУКОВЫЕ</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="header__catalog-item">
+                                            <a href="#">БУСИНЫ НА НИТЯХ</a>
+                                            <ul class="header__catalog-submenu">
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Керамические</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Хрустальные</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Шпинель синтетическая</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="header__catalog-item">
+                                            <a href="#">КРИСТАЛЛЫ</a>
+                                        </li>
+                                        <li class="header__catalog-item">
+                                            <a href="#">КАМНИ</a>
+                                            <ul class="header__catalog-submenu">
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Крошка</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Авантюрин</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Агат</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Аметист</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Гематит</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Горный хрусталь</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Гранат</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Кахолонг</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Коралл</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Лабрадорит</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Лава</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Лазурит</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Лунный камень</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Малахит</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Нефрит</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Опалит</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Раухтопаз</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Розовый кварц</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Сердолик</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Тигровый глаз</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Турквенит (говлит)</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Халцедон</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Яшма</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="header__catalog-item">
+                                            <a href="#">ЖЕМЧУГ И ПЕРЛАМУТР</a>
+                                            <ul class="header__catalog-submenu">
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Жемчуг</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Перламутр</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="header__catalog-item">
+                                            <a href="#">ИНСТРУМЕНТЫ</a>
+                                        </li>
+                                        <li class="header__catalog-item">
+                                            <a href="#">СТРАЗЫ</a>
+                                            <ul class="header__catalog-submenu">
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Стразовые цепи</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">На блистере</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="header__catalog-item">
+                                            <a href="#">УПАКОВКА</a>
+                                            <ul class="header__catalog-submenu">
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Почтовые конверты</a>
+                                                </li>
+                                                <li class="header__catalog-item">
+                                                    <a href="#">Коробочки</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__bot-menu">
+                            <nav class="header__menu-wrapper">
+                                <ul class="header__menu-list">
+                                    <li class="header__menu-item">ГЛАВНАЯ</li>
+                                    <li class="header__menu-item">О КОМПАНИИ</li>
+                                    <li class="header__menu-item">ОПЛАТА и ДОСТАВКА</li>
+                                    <li class="header__menu-item">БЛОГ</li>
+                                    <li class="header__menu-item">КОНТАКТЫ</li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header__bot-latest">
+                            <p class="header__latest">НЕДАВНО ПРОСМОТРЕННЫЕ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="payment">
+                <div class="container">
+                    <div class="payment__inner">
+                        <h2 class="payment__title">Правила оплаты</h2>
+                        <p class="payment__text">
+                            К оплате принимаются платежные карты: VISA Inc, MasterCard WorldWide, МИР. <br>
+                            Для оплаты товара банковской картой при оформлении заказа в интернет-магазине выберите
+                            способ оплаты: банковской картой. <br>
+                            При оплате заказа банковской картой, обработка платежа происходит на авторизационной
+                            странице банка, где Вам необходимо ввести данные Вашей банковской карты:
+                        </p>
+                        <p class="payment__text">
+                            1. Тип карты <br>
+                            2. Номер карты <br>
+                            3. Срок действия карты (указан на левой стороне карты) <br>
+                            4. Имя держателя карты (латинскими буквами, точно также как указано на карте) <br>
+                            5. CVC2/CVV2 код
+                        </p>
+                        <div class="payment__img">
+                            <img src="/assets/img/card_details.webp" alt="">
+                        </div>
+                        <p class="payment__text">
+                            Если Ваша карта подключена к услуге 3D-Secure, Вы будете автоматически переадресованы на
+                            страницу банка, выпустившего карту, для прохождения процедуры аутентификации. Информацию о
+                            правилах и методах дополнительной идентификации уточняйте в Банке, выдавшем Вам банковскую
+                            карту. <br>
+                            Безопасность обработки интернет-платежей через платежный шлюз банка гарантирована
+                            международным сертификатом безопасности PCI DSS. Передача информации происходит с
+                            применением технологии шифрования TLS. Эта информация недоступна посторонним лицам.
+                        </p>
+                        <p class="payment__text">Советы и рекомендации по необходимым мерам безопасности проведения
+                            платежей с использованием банковской карты:</p>
+                        <p class="payment__text">
+                            1. Берегите свои пластиковые карты так же, как бережете наличные деньги. Не забывайте их в
+                            машине, ресторане, магазине и т.д. <br>
+                            2. Никогда не передавайте полный номер своей кредитной карты по телефону каким-либо лицам
+                            или
+                            компаниям <br>
+                            3. Всегда имейте под рукой номер телефона для экстренной связи с банком, выпустившим вашу
+                            карту, и в случае ее утраты немедленно свяжитесь с банком <br>
+                            4. Вводите реквизиты карты только при совершении покупки. Никогда не указывайте их по
+                            каким-то
+                            другим причинам.
+                        </p>
+                        <p class="payment__text">
+                            Оплата происходит через авторизационный сервер Процессингового центра Банка с использованием
+                            Банковских карт следующих платежных систем:
+                        </p>
+                        <ul class="payment__text">
+                            <li>VISA International</li>
+                            <li>MasterCard Worldwide</li>
+                            <li>МИР</li>
+                        </ul>
+                        <p class="payment__text">
+                            При выборе формы оплаты с помощью пластиковой карты проведение платежа по заказу
+                            производится непосредственно после его оформления. После завершения оформления заказа в
+                            нашем магазине, Вы должны будете нажать на кнопку «Оплата картой», при этом система
+                            переключит Вас на страницу авторизационного сервера, где Вам будет предложено ввести данные
+                            пластиковой карты, инициировать ее авторизацию, после чего вернуться в наш магазин кнопкой
+                            «Вернуться в магазин». После того, как Вы возвращаетесь в наш магазин, система уведомит Вас
+                            о результатах авторизации. В случае подтверждения авторизации Ваш заказ будет автоматически
+                            выполняться в соответствии с заданными Вами условиями. В случае отказа в авторизации карты
+                            Вы сможете повторить процедуру оплаты.
+                        </p>
+                        <div class="payment__img">
+                            <img src="/assets/img/payments.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__content">
+                        <div class="footer__item">
+                            <h4 class="footer__item-title">КОНТАКТЫ</h4>
+                            <div class="footer__item-text">
+                                <iconify-icon icon="jam:phone" width="20" height="20"></iconify-icon><a
+                                    href="tel:+79857398284">8 (985) 739-82-84</a>
+                            </div>
+                            <div class="footer__item-text">
+                                <iconify-icon icon="carbon:email" width="20" height="20"></iconify-icon><a
+                                    href="mailto:stelmuxov@mail.ru">stelmuxov@mail.ru</a>
+                            </div>
+                            <div class="footer__item-text">
+                                <iconify-icon icon="bi:geo-alt" width="20" height="20"></iconify-icon>
+                                <p>Россия, Московская область, г. Балашиха, пр-т Ленина, 74</p>
+                            </div>
+                            <div class="footer__item-text">
+                                <iconify-icon icon="fe:calendar" width="20" height="20"></iconify-icon>
+                                <p>пн — пт 9:00 — 18:00 <br> сб, вс — выходные</p>
+                            </div>
+                            <div class="footer__item-socials">
+                                <a href="#" class="footer__socials-item">
+                                    <img src="/assets/img/socials/youtube.webp" alt="youtube">
+                                </a>
+                                <a href="#" class="footer__socials-item">
+                                    <img src="/assets/img/socials/instagram.webp" alt="instagram">
+                                </a>
+                                <a href="#" class="footer__socials-item">
+                                    <img src="/assets/img/socials/telegram.webp" alt="telegram">
+                                </a>
+                                <a href="#" class="footer__socials-item">
+                                    <img src="/assets/img/socials/vkontakte.webp" alt="vkontakte">
+                                </a>
+                                <a href="#" class="footer__socials-item">
+                                    <img src="/assets/img/socials/whatsapp.webp" alt="whatsapp">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <h4 class="footer__item-title">КАТАЛОГ</h4>
+                            <p class="footer__item-text">Правила оплаты</p>
+                            <p class="footer__item-text">Возврат товара</p>
+                            <p class="footer__item-text">Отказ от услуги</p>
+                            <p class="footer__item-text">Условия доставки</p>
+                            <p class="footer__item-text">Политика конфиденциальности</p>
+                        </div>
+                        <div class="footer__item">
+                            <h4 class="footer__item-title">ИНФОРМАЦИЯ</h4>
+                            <p class="footer__item-text">О компании</p>
+                            <p class="footer__item-text">Доставка</p>
+                            <p class="footer__item-text">Оплата</p>
+                            <p class="footer__item-text">Как ухаживать за фурниторой</p>
+                            <p class="footer__item-text">Мастер-классы</p>
+                        </div>
+                        <div class="footer__item footer__item-mail">
+                            <h4 class="footer__item-title">БУДЬТЕ В КУРСЕ СОБЫТИЙ С ПОМОЩЬЮ НОВОСТНОЙ РАССЫЛКИ</h4>
+                            <p class="footer__item-text">*Подпишитесь на нашу рассылку новостей, чтобы получать ранние
+                                предложения со скидками, обновления и информацию о новых продуктах</p>
+                            <input type="text">
+                            <div class="footer__item-pay">
+                                <img src="/assets/img/payments.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__privacy">
+                        <span>©
+                            <a href="http://newland-furnitura.ru/">newland-furnitura.ru</a> — все права защищены
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

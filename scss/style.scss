@@ -9,7 +9,8 @@
     --color-tx-black: #000000;
     --color-tx-blue: #0d34a4;
     --color-tx-white: #FFFFFF;
-    --color-tx-dark-grey: rgba(112,112,112,1);
+    --color-tx-light-grey: #999;
+    --color-tx-dark-grey: #707070;
 
     // background colors
     --color-bg-white: #fff;
@@ -33,6 +34,7 @@
     --font-sz-30: 30px;
     --font-sz-32: 32px;
     --font-sz-40: 40px;
+    --font-sz-42: 42px;
     --font-sz-68: 68px;
 
     // font-weight
@@ -40,6 +42,13 @@
     --font-w-medium: 500;
     --font-w-semibold: 600;
     --font-w-bold: 700;
+}
+
+@keyframes socials {
+    0% { transform: translateY(-1.5px); }
+    50% { transform: translateY(-3px); }
+    70% { transform: translateY(-1.5px); }
+    100% { transform: translateY(0px);}
 }
 
 @keyframes header {
@@ -53,7 +62,9 @@
         top: 0;
     }
 }
-
+html, body {
+    height: 100%;
+}
 body {
     font-family: var(--font-f-rubik);
     font-weight: var(--font-w-regular);
@@ -61,11 +72,16 @@ body {
     background-color: var(--color-bg-white);
     letter-spacing: 0px;
 }
+main {
+    flex-grow: 1;
+}
 
 .wrapper {
     min-height: 100%;
     width: 100%;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -136,7 +152,7 @@ body {
         & .container {
             display: flex;
             justify-content: space-between;
-            padding: 10px 0;
+            padding: 10px 20px;
         }
 
         &-catalog {}
@@ -638,25 +654,61 @@ body {
 /* ============================== FOOTER ============================== */
 
 .footer {
+    background-color: var(--color-bg-dark-blue);
 
     &__inner {
+        padding: 30px 0 50px;
     }
 
     &__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
     }
 
     &__item {
+        display: flex;
+        flex-direction: column;
 
         &-title {
+            font-size: var(--font-sz-14);
+            font-weight: var(--font-w-semibold);
+            color: var(--color-tx-white);
+            line-height: 24px;
+            margin-bottom: 15px;
         }
 
         &-text {
+            display: flex;
+            font-size: var(--font-sz-14);
+            color: var(--color-tx-light-grey);
+            line-height: 22px;
+            margin-bottom: 10px;
+            & iconify-icon {
+                margin-right: 5px;
+            }
         }
 
         &-socials {
+            display: flex;
+            margin-top: 15px;
         }
 
         &-pay {
+            margin-top: 45px;
+            max-width: 262px;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &-mail {
+            max-width: 370px;
+            & p {
+                color: var(--color-tx-dark-grey);
+            }
         }
     }
 
@@ -667,17 +719,55 @@ body {
             height: 30px;
             border-radius: 5px;
             overflow: hidden;
+            margin-right: 10px;
             & img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
             }
+            &:hover {
+                animation: socials 1s infinite;
+            }
         }
     }
 
     &__privacy {
+        border-top: 1px solid var(--color-tx-dark-grey);
+        margin-top: 40px;
+        padding-top: 15px;
+        & a {
+            color: var(--color-tx-light-grey);
+        }
+        & span {
+            font-size: var(--font-sz-14);
+            color: var(--color-tx-dark-grey);
+        }
     }
 }
-.container {
+
+/* ============================== PAGE - ABOUT-COMPANY ============================== */
+
+.company {
+    min-height: 630px;
+
+    &__inner {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: var(--font-sz-42);
+        font-weight: var(--font-w-bold);
+        margin-bottom: 20px;
+
+    }
+
+    &__text {
+        font-size: var(--font-sz-14);
+        color: var(--color-tx-dark-grey);
+        line-height: 26px;
+    }
 }
 
+/* ============================== PAGE - ABOUT-COMPANY ============================== */
