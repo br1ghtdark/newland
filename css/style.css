@@ -116,6 +116,7 @@ a {
   --color-tx-black: #000000;
   --color-tx-blue: #0d34a4;
   --color-tx-white: #FFFFFF;
+  --color-tx-lightest-grey: #d1d1d1;
   --color-tx-light-grey: #999;
   --color-tx-dark-grey: #707070;
   --color-bg-white: #fff;
@@ -202,7 +203,8 @@ a {
     top: 0;
   }
 }
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -879,4 +881,354 @@ main {
   line-height: 26px;
 }
 
-/* ============================== PAGE - ABOUT-COMPANY ============================== */
+/* ============================== PAGE - HOW-TO-BUY ============================== */
+.how__inner {
+  padding-bottom: 50px;
+}
+.how__inner div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+.how__inner div ul li {
+  padding: 5px 0;
+}
+.how__inner div ul li ul {
+  margin-left: 30px;
+}
+.how__title {
+  font-size: var(--font-sz-42);
+  font-weight: var(--font-w-semibold);
+  color: var(--color-bg-dark-blue);
+  margin: 50px 0 10px;
+}
+.how__text {
+  font-size: var(--font-sz-14);
+  line-height: 22px;
+  color: var(--color-tx-dark-grey);
+}
+.how__img {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.how-payment ul li {
+  list-style-type: disc;
+  margin-left: 15px;
+}
+
+.how-return ul li {
+  list-style-type: disc;
+  margin-left: 15px;
+}
+
+.how-refusal ul li {
+  list-style-type: disc;
+  margin-left: 15px;
+}
+.how-refusal ul li ul li {
+  list-style-type: circle;
+}
+
+.how-delivery ul li ol li {
+  list-style-type: decimal;
+  margin-left: 15px;
+}
+
+.how-props table {
+  border: 1px solid var(--color-tx-light-grey);
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  font-size: 100%;
+  width: 100%;
+  word-wrap: break-word;
+  margin-bottom: 30px;
+}
+.how-props table td {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  padding: 15px 0 15px 20px;
+  line-height: 20px;
+  text-align: start;
+}
+.how-props tbody {
+  font-size: var(--font-sz-14);
+  color: var(--color-tx-dark-grey);
+  line-height: 20px;
+}
+.how-props tbody tr td {
+  padding: 15px 0 15px 20px;
+}
+.how-props tbody tr td:last-child {
+  padding: 15px 20px 15px 20px;
+}
+
+/* ============================== PAGE - CONTACTS ============================== */
+.contacts__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px 0;
+}
+.contacts__inner h3 {
+  font-size: var(--font-sz-24);
+  font-weight: var(--font-w-semibold);
+  color: var(--color-bg-dark-blue);
+}
+.contacts__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.contacts__info-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.contacts__info-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contacts__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contacts__content-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  border: 1px solid var(--color-tx-light-grey);
+  margin-right: 10px;
+}
+.contacts__content-icon iconify-icon {
+  color: var(--color-tx-light-grey);
+}
+.contacts__content-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2px 0;
+}
+.contacts__content-title {
+  font-size: var(--font-sz-14);
+  color: var(--color-tx-dark-grey);
+}
+.contacts__content-subtitle {
+  font-size: var(--font-sz-14);
+  color: var(--color-tx-black);
+}
+.contacts__socials-item {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.contacts__socials-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.contacts__socials-item:hover {
+  -webkit-animation: socials 1s infinite;
+          animation: socials 1s infinite;
+}
+.contacts__callback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.contacts__callback-cf {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  gap: 20px;
+}
+.contacts__callback-cf .cf-item-1 {
+  grid-area: 1/1/2/2;
+}
+.contacts__callback-cf .cf-item-2 {
+  grid-area: 1/2/2/3;
+}
+.contacts__callback-cf .cf-item-3 {
+  grid-area: 2/1/3/3;
+}
+.contacts__callback-cf .cf-item-4 {
+  grid-area: 3/1/4/3;
+}
+.contacts__callback-cf .cf-item-5 {
+  grid-area: 4/1/5/3;
+}
+.contacts__cf-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contacts__cf-item label {
+  font-size: var(--font-sz-13);
+  color: var(--color-tx-black);
+  margin-bottom: 5px;
+}
+.contacts__cf-item input {
+  border: 1px solid var(--color-tx-lightest-grey);
+  background: #fff;
+  padding: 4px 15px;
+  width: 100%;
+  text-align: left;
+  font-size: var(--font-sz-14);
+  line-height: 30px;
+}
+.contacts__cf-item button {
+  font-size: var(--font-sz-14);
+  font-weight: var(--font-w-semibold);
+  background-color: var(--color-tx-dark-grey);
+  color: var(--color-bg-white);
+  line-height: 40px;
+  -webkit-transition: ease 0.6s;
+  transition: ease 0.6s;
+}
+.contacts__cf-item button:hover {
+  background-color: var(--color-tx-lightest-grey);
+  color: var(--color-tx-blue);
+  -webkit-transition: ease 0.6s;
+  transition: ease 0.6s;
+}
+
+/* ============================== PAGE - BLOG ============================== */
+.blog__inner {
+  padding: 50px 0;
+}
+.blog__content-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blog__content-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0 30px 15px;
+}
+.blog__item-img {
+  width: 472px;
+  height: 265px;
+}
+.blog__item-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.blog__item-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blog__item-about p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: var(--font-sz-12);
+  color: var(--color-tx-dark-grey);
+  margin-right: 20px;
+}
+.blog__item-about p iconify-icon {
+  margin-right: 5px;
+}
+.blog__item-title {
+  font-size: var(--font-sz-24);
+  font-weight: var(--font-w-semibold);
+}
+.blog__item-text p {
+  font-size: var(--font-sz-14);
+  color: var(--color-tx-dark-grey);
+}
+.blog__item-btn {
+  font-size: var(--font-sz-13);
+  font-weight: var(--font-w-semibold);
+  -webkit-transition: ease 0.6s;
+  transition: ease 0.6s;
+}
+.blog__item-btn:hover {
+  color: var(--color-tx-blue);
+  -webkit-transition: ease 0.6s;
+  transition: ease 0.6s;
+}
+.blog__item-btn:hover a iconify-icon {
+  -webkit-transform: translateX(5px);
+      -ms-transform: translateX(5px);
+          transform: translateX(5px);
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+}
+.blog__item-btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blog__item-btn a iconify-icon {
+  font-size: var(--font-sz-18);
+  margin-left: 5px;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+}
