@@ -75,11 +75,6 @@
     }
 }
 
-html,
-body {
-    height: 100%;
-}
-
 body {
     font-family: var(--font-f-rubik);
     font-weight: var(--font-w-regular);
@@ -175,7 +170,15 @@ main {
 
         &-menu {}
 
-        &-latest {}
+        &-latest {
+            font-size: var(--font-sz-13);
+            color: var(--color-tx-black);
+            transition: ease .6s;
+            &:hover {
+                color: var(--color-tx-blue);
+                transition: ease .6s;
+            }
+        }
     }
 
     &__catalog {
@@ -509,7 +512,6 @@ main {
 
         &-img {
             width: 440px;
-            height: 195 px;
             overflow: hidden;
 
             & img {
@@ -1208,3 +1210,126 @@ main {
         &-heading {}
     }
 }
+
+
+/* ============================== MOBILE ============================== */
+/* ============================== MOBILE ============================== */
+/* ============================== MOBILE ============================== */
+
+
+/* ============================== MEDIA MAX - 1250PX ============================== */
+
+@media (max-width: 1355px) {
+
+    .socials {
+        &__inner {
+            justify-content: center;
+        }
+        &__item {
+            &-img {
+                width: 380px;
+            }
+        }
+    }
+
+    .news {
+        &__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 18px;
+            grid-row-gap: 25px;
+            &-item {
+                align-self: center;
+                justify-self: center;
+            }
+        }
+    }
+}
+/* ============================== MEDIA MAX - 1250PX ============================== */
+
+
+/* ============================== MEDIA MAX - 1200PX ============================== */
+@media (max-width: 1200px) {
+
+    .header {
+        &__bot {
+            &-latest {
+                font-size: var(--font-sz-12);
+            }
+            &-catalog {
+                font-size: var(--font-sz-13);
+            }
+        }
+        &__catalog {
+            &-submenu {
+                & li {
+                    height: 42px;
+                    padding: 14px 25px 14px 25px;
+                }
+                &--grid {
+                    grid-template-columns: 150px 150px 150px;
+                }
+            }
+        }
+        &__menu {
+            &-list {
+                font-size: var(--font-sz-13);
+            }
+        }
+    }
+
+    main h2 {
+        font-size: var(--font-sz-18);
+    }
+
+    .info {
+        &__item {
+            padding: 0 10px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            &-title {
+                font-size: var(--font-sz-14);
+            }
+            &-subtitle {
+                font-size: var(--font-sz-13);
+            }
+            &-img {
+                width: 40px;
+                margin-bottom: 10px;
+                & img {
+                    object-fit: contain;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .socials {
+        &__item {
+            &-img {
+                width: 320px;
+            }
+            &-btn {
+                margin-top: 6px;
+            }
+        }
+    }
+
+    .footer {
+        &__item {
+            &-title {
+                font-size: var(--font-sz-13);
+                line-height: 18px;
+            }
+            &-text {
+                font-size: var(--font-sz-13);
+                line-height: 19px;
+            }
+        }
+    }
+}
+/* ============================== MEDIA MAX - 1200PX ============================== */
+
+

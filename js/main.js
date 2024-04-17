@@ -16,6 +16,14 @@ $(document).ready(function () {
         gap: 1,
         autoplay: false,
         arrows: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                }
+            }
+        ]
     });
 });
 
@@ -25,5 +33,13 @@ var glide = new Glide('.catalog__slider-glide', {
     type: 'carousel',
     perView: 5,
     gap: 1,
+    breakpoints: ({
+        1200: {
+            perView: 4
+        },
+        992: {
+            perView: 3
+        }
+    })
 })
 glide.mount()
