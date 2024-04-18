@@ -16,13 +16,34 @@ $(document).ready(function () {
         gap: 1,
         autoplay: false,
         arrows: true,
-        responsive: [
-            {
+        responsive: [{
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
                 }
-            }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 4,
+                }
+            }, {
+                breakpoint: 902,
+                settings: {
+                    slidesToShow: 3,
+                }
+            }, {
+                breakpoint: 867,
+                settings: {
+                    slidesToShow: 3,
+                }
+            }, {
+                breakpoint: 515,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+
         ]
     });
 });
@@ -39,7 +60,7 @@ var glide = new Glide('.catalog__slider-glide', {
         },
         992: {
             perView: 3
-        }
+        },
     })
 })
 glide.mount()
